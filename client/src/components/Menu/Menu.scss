@@ -1,0 +1,71 @@
+@import '../../App.scss';
+
+$menu-nav-width: 40vw;
+$menu-font-color: #101010;
+$menu-font-color-negative: #ffffff;
+$menu-background-color: #d1d1d1f3;
+
+.menu {
+    &__button {
+        @include reset-default-button;
+        font-size: 1.5em;
+        position: relative;
+        z-index: 101;
+        transition: 0.3s ease-in;
+        &--negative {
+            @include reset-default-button;
+            font-size: 1.5em;
+            position: relative;
+            z-index: 101;
+            color: $menu-font-color-negative;
+            transition: 0.3s ease;
+        }
+    }
+    &__icon {
+        vertical-align: middle;
+        font-size: 1.5em;
+        margin: 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 101;
+        transition: 0.3s ease;
+        &--negative {
+            vertical-align: middle;
+            font-size: 1.5em;
+            margin: 10px;
+            cursor: pointer;
+            position: relative;
+            z-index: 101;
+            color: $menu-font-color-negative;
+            transition: 0.3s ease;
+        }
+    }
+    &__nav {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        padding-top: 100px;
+        height: 100vh;
+        width: $menu-nav-width;
+        transition: 0.3s ease-in;
+        background-color: $menu-background-color;
+        &--opened {
+            right: 0;
+        }
+        &--closed {
+            right: -$menu-nav-width;
+        }
+    }
+    &__list {
+        @include reset-default-list;
+    }
+    &__list-element {
+        margin: 20px;
+        text-align: center;
+        border: 1px solid grey;
+    }
+    &__link {
+        font-size: 1.5em;
+        color: $menu-font-color;
+    }
+}

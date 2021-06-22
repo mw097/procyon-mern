@@ -1,0 +1,22 @@
+$animation-overlay-font-color: white;
+
+.animation-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    color: $animation-overlay-font-color;
+    text-align: center;
+    padding: 25vh 0 ;
+    font-size: 3em;
+    font-weight: 600;
+    &__first {
+
+    }
+    &__second {
+        line-height: 3em;
+        padding: 0 30px;
+        color: black;
+        background-color: white;
+    }
+}

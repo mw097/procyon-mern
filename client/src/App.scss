@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+// MIXINS
+@mixin reset-default-button {
+    display: inline;
+    vertical-align: middle;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+@mixin reset-default-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

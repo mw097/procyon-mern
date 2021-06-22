@@ -1,0 +1,13 @@
+.logo {
+    white-space: nowrap;
+    &__image {
+        vertical-align: middle;
+    }
+    &__name {
+        vertical-align: middle;
+        &--negative {
+            vertical-align: middle;
+            color: white;
+        }
+    }
+}
