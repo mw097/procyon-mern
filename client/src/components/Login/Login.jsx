@@ -5,22 +5,20 @@ import { Link } from 'react-router-dom';
 
 export default function Login({ menuOpened }) {
     const [isLogged, setIsLogged] = useState(false);
-    const [isChoosedRegistartion, setIsChoosedRegistartion] = useState(true);
 
     useEffect(() => {
         setIsLogged(false);
-        setIsChoosedRegistartion(true);
         return () => {
             setIsLogged(false);
-            setIsChoosedRegistartion(false);
         }
-    }, [isLogged, isChoosedRegistartion]);
+    }, [isLogged]);
 
     return (
         <div className="login">
             { isLogged ? <button className="login__button"><FaUserAlt /></button> :
                 <button className="login__button">
-                    <Link className={`login__link${menuOpened ?  '--negative' : ''}`} to="/sign-up"> Login | Register </Link>
+                    <Link className={`login__link${menuOpened ? '--negative' : ''}`} to="/sign-in"> Sign in | </Link>
+                    <Link className={`login__link${menuOpened ? '--negative' : ''}`} to="/sign-up"> Sign up </Link>
                 </button>
             }
         </div>

@@ -4,7 +4,7 @@ import './SignInForm.scss';
 export default function SignInForm() {
     return (
         <div className="sign-in-form">
-            <h4 className="sign-in-form__title">Create account</h4>
+            <h4 className="sign-in-form__title">Login to your account</h4>
             <form className="sign-in-form__form">
                 <input
                     className="sign-in-form__input"
