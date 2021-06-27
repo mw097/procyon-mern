@@ -1,0 +1,45 @@
+@import '../../App.scss';
+
+$sign-in-form-font-color: #ffffff;
+
+.sign-in-form {
+    margin: 15vh;
+    background-color: #0000008c;
+    &__title {
+        color: $sign-in-form-font-color;
+        margin-bottom: 50px; 
+    }
+    &__input {
+        @include reset-default-input;
+        font-size: 0.5em;
+        color: $sign-in-form-font-color;
+        cursor: pointer;
+        border: 2px solid $sign-in-form-font-color;
+        border-top: 0;
+        border-radius: 2%;
+        &:focus {
+            outline: none;
+            caret-color: $sign-in-form-font-color;
+        }
+        &:hover {
+            border: 2px solid grey;
+            border-top: 0;
+        }
+        &::placeholder {
+            color: $sign-in-form-font-color;
+            text-align: center;
+        }
+        &::placeholder:focus {
+            color: transparent;
+        }
+    }
+    &__input-submit {
+        @include reset-default-input;
+        font-size: 1em;
+        color: $sign-in-form-font-color;
+        cursor: pointer;
+        &:hover {
+            color:grey;
+        }
+    }
+}

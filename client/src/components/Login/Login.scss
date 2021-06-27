@@ -1,0 +1,25 @@
+@import '../../App.scss';
+@import '../Menu/Menu.scss';
+
+.login {
+    margin: auto 25px auto 0 ;
+    &__button {
+        @include reset-default-button;
+        font-size: 1.5em;
+        position: relative;
+        z-index: 101;
+        &--negative {
+            @include reset-default-button;
+            font-size: 1.5em;
+            position: relative;
+            z-index: 101;
+            color: $menu-font-color-negative;
+        }
+   }
+   &__link {
+       color: $menu-font-color-negative;
+       &--negative {
+           color: black;
+       }
+   }
+}

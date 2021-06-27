@@ -6,38 +6,44 @@ $menu-font-color-negative: #ffffff;
 $menu-background-color: #d1d1d1f3;
 
 .menu {
+    .top-menu-container {
+        display: flex;
+        justify-content: space-between;
+        &--wide {
+            width: calc( 40vw - 30px );
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &-button-container {
+        cursor: pointer;
+    }
     &__button {
         @include reset-default-button;
         font-size: 1.5em;
         position: relative;
         z-index: 101;
-        transition: 0.3s ease-in;
         &--negative {
             @include reset-default-button;
             font-size: 1.5em;
             position: relative;
             z-index: 101;
             color: $menu-font-color-negative;
-            transition: 0.3s ease;
         }
     }
     &__icon {
         vertical-align: middle;
         font-size: 1.5em;
         margin: 10px;
-        cursor: pointer;
         position: relative;
         z-index: 101;
-        transition: 0.3s ease;
         &--negative {
             vertical-align: middle;
             font-size: 1.5em;
             margin: 10px;
-            cursor: pointer;
             position: relative;
             z-index: 101;
             color: $menu-font-color-negative;
-            transition: 0.3s ease;
         }
     }
     &__nav {
@@ -47,13 +53,17 @@ $menu-background-color: #d1d1d1f3;
         padding-top: 100px;
         height: 100vh;
         width: $menu-nav-width;
-        transition: 0.3s ease-in;
+        transition: 1s ease;
         background-color: $menu-background-color;
         &--opened {
             right: 0;
+            visibility: visible;
+            opacity: 1;
         }
         &--closed {
-            right: -$menu-nav-width;
+            right: 0;
+            visibility: hidden;
+            opacity: 0;
         }
     }
     &__list {

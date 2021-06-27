@@ -1,0 +1,14 @@
+$main-page-text-font-color: white;
+
+.main-page-text{
+    margin: 25vh;
+    &__first {
+        color: $main-page-text-font-color;
+    }
+    &__second {
+        line-height: 3em;
+        padding: 0 30px;
+        color: black;
+        background-color: $main-page-text-font-color;
+    }
+}
