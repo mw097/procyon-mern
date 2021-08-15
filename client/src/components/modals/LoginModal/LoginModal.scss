@@ -1,0 +1,17 @@
+.login-modal {
+    background-color: hsla(0, 0%, 0%, 0.671);
+    height: 50vh;
+    width: 40vw;
+    margin: 5% auto;
+    &__login,
+    &__register  {
+        color: white;
+        font-size: 0.4em;
+        position: relative;
+        line-height: 70px;
+        label {
+            position: absolute;
+            left: 55px;
+        }
+    }
+}

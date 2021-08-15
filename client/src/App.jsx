@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/Header/Header';
+import Header from './components/mainPage/Header/Header';
 import './App.scss';
-import Background3DModel from './components/Background3DModel/Background3DModel';
-import AnimationOverlay from './components/AnimationOverlay/AnimationOverlay';
+import Background3DModel from './components/mainPage/Background3DModel/Background3DModel';
+import AnimationOverlay from './components/mainPage/AnimationOverlay/AnimationOverlay';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () => {

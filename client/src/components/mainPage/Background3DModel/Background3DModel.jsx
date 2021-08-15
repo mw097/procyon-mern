@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import './Background3DModel.scss';
 import { Canvas } from '@react-three/fiber';
-import Model from '../models3D/Scene';
+import Model from '../../models3D/Scene';
 import { Stars } from '@react-three/drei';
 
 export default function Background3DModel() {
